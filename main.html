@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gerenciamento de Itens</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>E S T A C I O N A M E N T O</h1>
+        <h2>Controle de Vagas</h2>
+        <nav>
+            <ul>
+                <li><a href="#" id="aba-cadastro">Cadastro</a></li>
+                <li><a href="#" id="aba-lista">Vagas</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main> 
+        <section id="tela-cadastro">
+            <h2>Cadastro de Vagas</h2>
+            <form id="formulario-cadastro">
+                <label for="placa">Placa:</label>
+                <input type="text" id="placa" required>
+                
+                <label for="nomeProprietario">Nome do Proprietário:</label>
+                <input type="text" id="nomeProprietario" required>
+
+                <label for="numeroAp">Número do Apartamento:</label>
+                <input type="text" id="numeroAp" required>
+                
+                <label for="blocoAp">Bloco do Apartamento:</label>
+                <input type="text" id="blocoAp" required>
+
+                <label for="modeloVeiculo">Modelo do Veiculo:</label>
+                <input type="text" id="modeloVeiculo" required>
+
+                <label for="corVeiculo">Cor do Veiculo:</label>
+                <input type="text" id="corVeiculo" required>
+
+                <button type="submit">Cadastrar</button>
+            </form>
+
+            <h2>Vagas Disponiveis</h2>
+            <ul id="vagas-disponiveis"></ul>
+        </section>
+
+        <section id="tela-lista">
+            <h2>Vagas Ocupadas</h2>
+            <ul id="lista-itens">
+            </ul>
+        
+            <h2>Reservas</h2>
+            <ul id="lista-reservas">
+            </ul>
+        </section>
+        
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
